@@ -1,5 +1,7 @@
 samples:
   - boot/zephyr
 build:
+  depends:
+  - nrf
   cmake-ext: True
   kconfig-ext: True

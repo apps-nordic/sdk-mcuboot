@@ -695,10 +695,8 @@ void main(void)
 }
 
 #ifdef CONFIG_IMCU_IPC
-static int imcu_ipc_init(const struct device *dev)
+static int imcu_ipc_init(void)
 {
-    ARG_UNUSED(dev);
-
     imcu_ipc_client_init();
 
     return 0;
